@@ -1,1 +1,1 @@
-A simple command-line application.
+Bot de responder perguntas em Dart para aprender assincronismo
