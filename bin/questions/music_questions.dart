@@ -162,7 +162,7 @@ class MusicQuestions {
       String answer = stdin.readLineSync().toString();
       if (answer.contains('Sim') || answer.contains('sim')) {
         String _botAnswer = renatoBot +
-            ' Beleza,  Aqui um POP para você escutar! Musica: ${musicasKpop[indexmusica]}';
+            ' Beleza,  Aqui um KPOP para você escutar! Musica: ${musicasKpop[indexmusica]}';
         print(_botAnswer);
       } else {
         String _botAnswer = renatoBot + ' Ah, foi mal... entendi errado.';
