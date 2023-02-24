@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'questions/time_questions.dart';
+import 'questions/music_questions.dart';
 
 void main() async {
   String renatoBot = 'RenatoBOT:\n';
@@ -24,8 +25,9 @@ void main() async {
     } else if (TimeQuestions(usuario).isThisTime()) {
       // verificar antes, assim não fazemos toda a função sem precisar.
       TimeQuestions(usuario).timeQuestion();
-    } else if (false) {
-      //Basta adicionar novas perguntas aqui!
+
+    } else if (MusicQuestions(usuario.toLowerCase()).isThisAMusic()) {
+      MusicQuestions(usuario.toLowerCase()).musicQuestion();
     } else {
       print(renatoBot +
           ' Não fui treinado para responder a essa pergunta \n Desculpe :( ');
